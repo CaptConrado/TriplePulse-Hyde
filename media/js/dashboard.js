@@ -29,10 +29,10 @@ $(document).ready(function(){
 	$('#loadMore').click(function(event){
 		event.preventDefault();
 		$.get(endpoint, {'page' : page}, function(response){
-			appendPosts(dummyresponse.data);
-			handleStatus(response.status);
+			appendPosts(response.data);
+			handleStatus(response.status.status);
 			page++;
-		});
+		}, 'json');
 	});
 	$('.post').fancybox({
 		'transitionIn' : 'none',
@@ -56,9 +56,9 @@ $(document).ready(function(){
 
 function getPosts(){
 	$.get(endpoint, {'page' : page}, function(response){
-		displayPosts(dummyresponse.data);
-		handleStatus(response.status);
-	});
+		displayPosts(response.data);
+		handleStatus(response.status.status);
+	}, 'json');
 	page++;
 }
 
@@ -87,7 +87,7 @@ function handleStatus(status){
 	if (status == 1){
 		$('#loadMore').show();
 	}else{
-		$('#loadMore').fadeOut();
+		$('#loadMore').hide();
 	}
 }
 
