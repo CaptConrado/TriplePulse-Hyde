@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8" />
+		<title>
+			
+    TriplePulse Social Dashboard
+
+		</title>
+
+		
+		<link rel="stylesheet" type="text/css" href="/media/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="/media/css/triplepulse.css" />
+		<link rel="stylesheet" href="/media/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+
+		
+
+	<link rel="stylesheet" type="text/css" href="/media/css/text.css" />
+	
+
+		
+		
+		
+		
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="/media/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/media/js/fancybox/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="/media/js/global.js"></script>
+
+		
+
+		
+		
+
+	</head>
+
+	<body>
+
+		<div id="site">	
+
+			<div class="container header">
+	<a class="logo" href="/">TriplePulse</a>
+	<div class="nav">
+		<a class="text stacks" href="stacks.html">Our Stacks</a>
+		<a class="text tips" href="dashboard.html#tips">Training Tips</a>
+		<a class="text results" href="dashboard.html#results">Results</a>
+		<span class="login">
+			<a class="btn login" href="#">Login</a>
+			<a class="btn btn-primary" href="signup.html">Sign Up</a>
+		</span>
+	</div>
+	<a class="newsletter" href="#">Get Our Newsletter</a>
+</div>
+
+			
+
+	<div class="hook">
+		<div>
+			<div class="container">
+				<h1>
+					
+	Mission
+
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="span8">
+				
+	<p>We started TriplePulse out of Westwood, California, with the goal of helping amateur and intermediate endurance athletes reach their full potential.  We’ve sifted through the noise of the endurance nutrition market to deliver the essential vitamins and supplements conveniently to the door of our customers on a monthly basis.  Our mission is to support endurance athletes, both physically and mentally, and help overcome their challenges during the race and beyond.  In addition to our products, we will curate web content with expert training insight and inspiration from sophisticated athletes. We believe this mix is the recipe for perseverance and universal success.<p>
+	
+
+			</div>
+			<div class="span4">
+				
+
+			</div>
+		</div>
+	</div>
+
+
+
+			<div class="footer">
+	<div class="container">
+		<a class="logo" href="/">TriplePulse</a>
+		<ul class="nav primary">
+			<li><a href="stacks.html">Our Stacks</a></li>
+			<li><a href="dashboard.html#tips">Training Tips</a></li>
+			<li><a href="dashboard.html#results">Results</a></li>
+			<li><a class="newsletter" href="#">Newsletter</a><li>
+			<li><a class="login" href="#">Login</a></li>
+		</ul>
+		<ul class="nav secondary">
+			<li><a href="blog">Blog</a></li>
+			<li><a href="mission.html">Team Mission</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="terms.html">Terms</a></li>
+			<li><a href="privacy.html">Privacy</a></li>
+		</ul>
+		<div class="nav tertiary">
+			<div class="social">
+				<a href="https://www.facebook.com/TriplePulse" class="fb">Facebook</a>
+				<a href="http://metareddit.com/r/triathlon" class="reddit">Reddit</a>
+				<a href="https://twitter.com/Triple_Pulse" class="twitter">Twitter</a>
+				<a href="//pinterest.com/triplepulse" class="pinterest">Pinterest</a>
+			</div>
+			<span class="textCEO">Something on you mind? Text the CEO</span>
+		</div>
+	</div>
+</div>
+
+<div class="modal hide fade login">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Welcome Back.</h3>
+	<p>How's the training going? Get a win.</p>
+  </div>
+  <div class="modal-body">
+	<form method="post">
+	    <p><input type="text" name="username" placeholder="Username" /></p>
+	    <p><input type="password" name="password" placeholder="Password" /></p>
+		<p><input type="submit" value="Login" class="btn btn-primary btn-large" /><p>
+		<p class="fineprint"><a href="#">Forgot your password?</a> / <a href="signup">Need to create an account?</a></p>
+	</form>
+  </div>
+</div>
+
+<div class="modal hide fade newsletter">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Get access to exclusive deals and training tips from our pros. <span class="gray">Win</a>.</h3>
+	<p>	Stay motivated and train smarter with our weekly newsletter (we never spam).  Dominate 2013.</p>
+	<p><a href="#" class="btn btn-large fbNewsletter"><span class="fbIcon"></span>Sign up with Facebook</a></p>
+	<div class="or">or</div>
+  </div>
+  <div class="modal-body">
+	<form method="post">
+	    <p><input type="text" name="email" placeholder="Email" /></p>
+		<p><input type="submit" value="Continue" class="btn btn-primary btn-large" /><p>
+	</form>
+  </div>
+</div>
+
+<!-- <div id="fb-root"></div>
+<script>
+  // Additional JS functions here
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '554024687948944', // App ID
+      channelUrl : '//triplepulse.com/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional init code here
+
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script> -->
+
+		</div>
+
+	</body>
+
+</html>
+

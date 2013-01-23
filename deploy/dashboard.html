@@ -1,0 +1,161 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8" />
+		<title>
+			
+    TriplePulse Social Dashboard
+
+		</title>
+
+		
+		<link rel="stylesheet" type="text/css" href="/media/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="/media/css/triplepulse.css" />
+		<link rel="stylesheet" href="/media/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+
+		
+
+	<link rel="stylesheet" type="text/css" href="/media/css/dashboard.css" />
+	
+
+		
+		
+		
+		
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="/media/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/media/js/fancybox/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="/media/js/global.js"></script>
+
+		
+
+	<script type="text/javascript" src="/media/js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="/media/js/dashboard.js"></script>
+
+
+		
+		
+
+	</head>
+
+	<body>
+
+		<div id="site">	
+
+			<div class="container header">
+	<a class="logo" href="/">TriplePulse</a>
+	<div class="nav">
+		<a class="text stacks" href="stacks.html">Our Stacks</a>
+		<a class="text tips" href="dashboard.html#tips">Training Tips</a>
+		<a class="text results" href="dashboard.html#results">Results</a>
+		<span class="login">
+			<a class="btn login" href="#">Login</a>
+			<a class="btn btn-primary" href="signup.html">Sign Up</a>
+		</span>
+	</div>
+	<a class="newsletter" href="#">Get Our Newsletter</a>
+</div>
+
+			
+
+	<div class="dashboard">
+		<a href="#"><div class="logo centered">Triple Your Pulse</div></a>
+		<div class="dashboardNav">
+			<a class="btn" href="#athletes">TriplePulse Athletes</a>
+			<a class="btn" href="#science">Science</a>
+			<a class="btn" href="#tips">Training Tips</a>
+			<a class="btn" href="#results">Results</a>
+		</div>
+		<noscript>This page requires javascript. Please enable javascript and refresh the page.</noscript>
+		<div id="posts">
+		</div>
+		<a class="btn centered btn-primary" href='#' id="loadMore">Load More</a>
+	</div>
+
+
+
+			<div class="footer">
+	<div class="container">
+		<a class="logo" href="/">TriplePulse</a>
+		<ul class="nav primary">
+			<li><a href="stacks.html">Our Stacks</a></li>
+			<li><a href="dashboard.html#tips">Training Tips</a></li>
+			<li><a href="dashboard.html#results">Results</a></li>
+			<li><a class="newsletter" href="#">Newsletter</a><li>
+			<li><a class="login" href="#">Login</a></li>
+		</ul>
+		<ul class="nav secondary">
+			<li><a href="blog">Blog</a></li>
+			<li><a href="mission.html">Team Mission</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="terms.html">Terms</a></li>
+			<li><a href="privacy.html">Privacy</a></li>
+		</ul>
+		<div class="nav tertiary">
+			<div class="social">
+				<a href="https://www.facebook.com/TriplePulse" class="fb">Facebook</a>
+				<a href="http://metareddit.com/r/triathlon" class="reddit">Reddit</a>
+				<a href="https://twitter.com/Triple_Pulse" class="twitter">Twitter</a>
+				<a href="//pinterest.com/triplepulse" class="pinterest">Pinterest</a>
+			</div>
+			<span class="textCEO">Something on you mind? Text the CEO</span>
+		</div>
+	</div>
+</div>
+
+<div class="modal hide fade login">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Welcome Back.</h3>
+	<p>How's the training going? Get a win.</p>
+  </div>
+  <div class="modal-body">
+	<!-- Note: Set the login action to a permanent location if it changes from wordpress default -->
+	<form method="post" action="login/?action=login">
+	    <p><input type="text" name="log" placeholder="Username" /></p>
+	    <p><input type="password" name="pwd" placeholder="Password" /></p>
+		<p><input type="submit" name="wp-submit" value="Log In" class="btn btn-primary btn-large" /><p>
+		<input type="hidden" name="redirect_to" value="wp-admin"> 
+		<input type="hidden" name="testcookie" value="1">
+		<input type="hidden" name="instance" value="">
+		<p class="fineprint"><a href="#">Forgot your password?</a> / <a href="signup.html">Need to create an account?</a></p>
+	</form>
+  </div>
+</div>
+
+<div class="modal hide fade newsletter">
+  <div class="modal-header newsletterSignup">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Get access to exclusive deals and training tips from our pros. <span class="gray">Win</a>.</h3>
+	<p>	Stay motivated and train smarter with our weekly newsletter (we never spam).  Dominate 2013.</p>
+	<p><a href="#" class="btn btn-large fbNewsletter"><span class="fbIcon"></span>Sign up with Facebook</a></p>
+	<div class="or">or</div>
+  </div>
+  <div class="modal-body newsletterSignup">
+	<form method="post">
+	    <p><input type="text" name="email" placeholder="Email" /></p>
+		<p><input type="submit" value="Continue" class="btn btn-primary btn-large" /><p>
+	</form>
+  </div>
+  <div class="modal-header newsletterConfirm hide">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Thanks. <span class="gray">Now go win</a>.</h3>
+	<p>If you ever have any questions, ideas, challenges or just want to say hi, email us at <a href="dominate@triplepulse.com">dominate@triplepulse.com</a>.</p> 
+	<p>- The TriplePulse Team</p>
+  </div>
+  <div class="modal-body newsletterConfirm hide">
+	<p><button type="button" class="btn btn-primary btn-large" data-dismiss="modal">Continue</button><p>
+  </div>
+
+</div>
+
+
+		</div>
+
+	</body>
+
+</html>
+
