@@ -35,7 +35,7 @@
 
 /* Game */
 
-.game a{
+.game a.option{
 	display: block;
 	min-height: 200px;
 	padding: 40px 20px;
@@ -61,7 +61,7 @@
 	box-sizing: border-box;
 }
 
-.game a:hover{
+.game a.option:hover{
 	text-decoration: none;
 	box-shadow: inset 0px 0px 80px rgba(255,255,255,0.4), 1px 2px 2px rgba(0,0,0,0.3);
 }
@@ -77,7 +77,7 @@
 	padding: 20px 10px;
 }
 
-.game .price{
+.game .plans .price{
 	color: white;
 	font-weight: 100;
 	font-size: 42px;
@@ -85,7 +85,7 @@
 	
 }
 
-.game .savings{
+.game .plans .savings{
 	line-height: 24px;
 }
 
@@ -98,7 +98,7 @@
 }
 
 
-.game .term{
+.game .plans .term{
 	font-size: 24px;
 	line-height: 24px;
 	font-weight: 400;
@@ -108,7 +108,7 @@
 	margin-top: -20px;
 }
 
-.game .shipping{
+.game .plans .shipping{
 	font-size: 14px;
 	color: white;
 	letter-spacing: 0px;
@@ -119,4 +119,39 @@
 	background-color: rgb(62,62,62);
 	letter-spacing: 0px;
 	
+}
+
+.selectedPlan .price{
+	margin-top: 15px;
+	font-size: 24px;
+	text-align: right;
+}
+.selectedPlan .shipping{
+	text-align: right;
+}
+
+.paymentColumns .span6{
+	margin: 0px;
+	padding: 0px;
+}
+
+.paymentColumns .span6:nth-child(1){
+	background-color: rgb(250,250,250);
+}
+
+.paymentColumns .span6:nth-child(2){
+	background-color: rgb(242,242,242);
+}
+
+.paymentContent{
+	padding: 20px;
+}
+
+p.finePrint{
+	line-height: 3;
+	text-align: center;
+}
+
+.proceed{
+	float: right;
 }

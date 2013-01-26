@@ -5,7 +5,7 @@ body{
 	color: #454545;
 }
 
-a, a:hover{
+a, a:hover, ol > li:before{
 	color: #ee7324;
 }
 
@@ -52,7 +52,7 @@ h2{
 	color: #3d3d3d;
 }
 
-input[type="text"], input[type="password"]{
+.modal input[type="text"], input[type="password"]{
 	font-size: 18px;
 	height: 34px;
 	box-shadow: inset 0px 1px 4px rgba(0,0,0,0.2);

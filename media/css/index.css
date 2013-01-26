@@ -80,7 +80,7 @@
 /* What's in your pack? */
 .whatsInYourPack{
 	color: white;
-	background-color: #ef6d22;
+	background-color: rgb(242,242,242);
 	font-size: 16px;
 	font-weight: 600;
 }
