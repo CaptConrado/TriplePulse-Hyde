@@ -79,21 +79,21 @@
 
 /* What's in your pack? */
 .whatsInYourPack{
-	color: white;
 	background-color: rgb(242,242,242);
 	font-size: 16px;
 	font-weight: 600;
+	color: #333;
 }
 
 .whatsInYourPack a{
-	color: white;
+	color: #333;
 }
 
 .whatsInYourPack .monthsSupply{
 	font-weight: 100;
 	font-size: 24px;
 	margin-bottom: 30px;
-	color: #333;
+	color: #666;
 }
 
 .whatsInYourPack .span4{
