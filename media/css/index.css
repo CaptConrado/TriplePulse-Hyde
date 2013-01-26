@@ -103,6 +103,7 @@
 .whatsInYourPack .header{
 	display: inline-block;
 	padding: 5px 10px;
+	color: white;
 	background: #da4325; /* Old browsers */
 	background: -moz-linear-gradient(top, #da4325 0%, #d43d22 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#da4325), color-stop(100%,#d43d22)); /* Chrome,Safari4+ */
