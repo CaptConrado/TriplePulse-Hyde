@@ -101,7 +101,7 @@ h2{
 	margin-top: 20px;
 }
 
-/* Newlsetter */
+/* Newsletter */
 
 .modal .or{
 	position: absolute;
@@ -266,3 +266,26 @@ h2{
 	height: 63px;
 }
 
+
+/* Partner section shared between landing and stacks pages */
+
+div.partners{
+	position: relative;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+
+.partners h2{
+	color: #e0e0e0;
+}
+
+.partners .image{
+	text-indent: -9999px;
+	width: 505px;
+	height: 60px;
+	background-image: url('../images/partners.png');
+	display: inline-block;
+	margin-left: 30px;
+	position: relative;
+	top: -10px;
+}
